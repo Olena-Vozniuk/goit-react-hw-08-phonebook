@@ -6,7 +6,7 @@ import { AppBar } from '../AppBar/AppBar';
 export const Layout = () => {
   return <Wrapper>
     <AppBar />
-    <Suspense fallback={null}>
+    <Suspense fallback={<h1>Loading profile...</h1>}>
       <Outlet/>
     </Suspense>
   </Wrapper>;

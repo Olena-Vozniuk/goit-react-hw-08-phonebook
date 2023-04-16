@@ -1,8 +1,8 @@
-export default function HomeView() {
+export default function HomePage() {
     return (
         <div>
             <h1>
-                Welcome to Phonebook
+                Welcome to the Phonebook
                 <span role="img" aria-label="Greeting icon">
                     💁‍♀️
                 </span>

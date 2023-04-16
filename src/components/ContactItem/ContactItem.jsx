@@ -8,7 +8,7 @@ import { selectIsLoading } from "redux/contacts/selectors";
 export const ContactItem = ({ contact }) => {
     const dispatch = useDispatch();
     const isLoading = useSelector(selectIsLoading);
-    const { id, name, phone } = contact;
+    const { id, name, number } = contact;
     
     const handleDelete = () => {       
         dispatch(deleteContact(id))
@@ -16,8 +16,15 @@ export const ContactItem = ({ contact }) => {
 
     return (
         <ContactWrapper>
-            <p>{name}: {phone}</p>
-            <Button type="submit" disabled={isLoading} onClick={handleDelete}>{isLoading && <ClipLoader
+            {/* <table>
+                <tr>
+                    <td>{name}</td>
+                    <td>{number}</td>
+                </tr>
+            </table> */}
+            <p>{name}: {number}</p>
+            <Button type="submit" disabled={isLoading} onClick={handleDelete}>
+                {isLoading && <ClipLoader
         size={15}
         aria-label="Loading Spinner"
         data-testid="loader"
