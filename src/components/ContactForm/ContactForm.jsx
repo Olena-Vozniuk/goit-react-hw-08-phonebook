@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { selectIsLoading, selectContacts } from "redux/contacts/selectors";
+import { selectContacts } from "redux/contacts/selectors";
 import { addContact } from "redux/contacts/operations";
 import Button from "@mui/material/Button";
 import Box from './ContactForm.styled';
@@ -14,7 +14,7 @@ import { TextField } from 'formik-mui';
 
 export const ContactForm = ({ onClose }) => {
     const dispatch = useDispatch();
-    const isLoading = useSelector(selectIsLoading);
+    // const isLoading = useSelector(selectIsLoading);
     const contacts = useSelector(selectContacts);
 
     const handleSubmit = (values, actions) => {
