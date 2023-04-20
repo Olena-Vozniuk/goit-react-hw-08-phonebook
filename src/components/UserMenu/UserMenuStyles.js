@@ -1,7 +1,11 @@
 export const styles = {
   logOutBtn: {
-    display: { xs: 'none', md: 'flex' },
+    display: 'flex',
     color: '#66696A',
-    backgroundColor: 'rgba(27, 28, 28, 0.1)',
+    marginRight: '10px',
+    '&:hover': {
+    background: 'orangered',
+    color: 'white'
+    },
   },
 };

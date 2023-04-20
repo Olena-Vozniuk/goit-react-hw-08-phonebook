@@ -4,10 +4,9 @@ import { NavLink } from 'react-router-dom';
 export const StyledNavLink = styled(NavLink)`
 font-weight: 600;
 color: #3F4040;
-padding-bottom: 3px;
+padding: 30px 0 30px 0;
 &.active {
     color: orangered;
-    /* border-bottom: 2px solid orangered; */
   }
 `;
 

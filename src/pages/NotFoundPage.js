@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet';
 import notFounImage from '../images/004-min.jpg';
 import { Wrapper, Image } from './NotFoundPage.styled';
 

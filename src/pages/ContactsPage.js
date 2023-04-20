@@ -10,6 +10,7 @@ import { ContactFilter } from "components/ContactFilter/ContactFilter";
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import { Button } from '@mui/material';
 
+
 export default function ContactsPage() {
     const dispatch = useDispatch();
     const isLoading = useSelector(selectIsLoading);
@@ -21,9 +22,23 @@ export default function ContactsPage() {
         dispatch(fetchContacts());
     }, [dispatch]);
 
+    
     return (
-        <div style={{ textAlign: 'center', paddingTop: '30px'}}>
-            <Button onClick={toggleModal} variant="outlined"><PersonAddIcon/>Add a new contact</Button>
+        <div style={{ display: 'flex', flexDirection: 'column', width: '98%'}}>
+            <Button onClick={toggleModal} variant="contained"
+                sx={{
+                    marginTop: '20px',
+                    width: 250,
+                    aligneSelf: 'center',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    color: 'black', backgroundColor: '#95b7ed',
+                    '&:hover': {
+                        background: 'orangered',
+                        color: 'white'
+                    },
+                }}
+                startIcon={<PersonAddIcon />}>Add a new contact</Button>
             {showModal && (<ModalWindow onClose={toggleModal}><ContactForm onClose={toggleModal}/></ModalWindow>)}
             {isLoading && <p>Request in progress...</p>}
             <ContactFilter />

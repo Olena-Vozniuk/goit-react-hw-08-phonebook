@@ -9,7 +9,7 @@ gap: 15px;
 export const StyledNavLink = styled(NavLink)`
 font-weight: 600;
 color: #3F4040;
-padding-bottom: 5px;
+padding: 30px 10px 30px 10px;
 &.active {
     color: orangered;
   }

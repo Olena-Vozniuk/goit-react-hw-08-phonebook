@@ -1,11 +1,15 @@
-import { Helmet } from 'react-helmet';
 import { LogInForm } from 'components/LoginForm/LoginForm';
+import { Link } from 'react-router-dom';
 
 export default function LoginPage() {
+    
     return (
-        <div> 
+        <div style={{ display: 'flex', flexDirection: 'column', aligneItems: 'center'}}> 
             <h2>Log In</h2>
-            <LogInForm/>
+            <LogInForm />
+            <Link to={'/register'}>
+          Don't have an account? Register
+        </Link>
         </div>
     )
 };

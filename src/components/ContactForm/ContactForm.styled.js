@@ -20,17 +20,4 @@ border-radius: 5px;
 `;
 
 
-export const Button = styled.button`
-cursor: pointer;
-font-size: 24px;
-min-width: 400px;
-padding: 10px 30px;
-border-radius: 3px;
-border: 1px solid grey;
-background-color: rgba(197, 182, 235, 0.8);
-:hover{
-    background-color: green;
-    color: white;
-    transition: background-color color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-`
+

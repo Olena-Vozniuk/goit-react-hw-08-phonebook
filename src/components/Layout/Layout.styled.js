@@ -5,9 +5,8 @@ background: whitesmoke;
 color: #081d40;
 display: flex;
 flex-direction: column;
-justify-content: center;
 align-items: center;
-padding: 0px 20px 250px 20px;
+min-height: 100vh;
 a {
     text-decoration: none;
 }

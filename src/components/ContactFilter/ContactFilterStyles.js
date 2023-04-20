@@ -5,5 +5,5 @@ export const styles = {
     alignItems: 'center',
     marginTop: '30px',
   },
-  input: { width: '500px' },
+  input: { width: '60%' },
 };
